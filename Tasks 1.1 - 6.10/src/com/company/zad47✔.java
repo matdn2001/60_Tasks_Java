@@ -1,12 +1,11 @@
 package com.company;
 
-import org.jetbrains.annotations.NotNull;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class zad47 {
+class zad47 {
     public static final String ANSI_YELLOW = "\u001B[33m";
     public static final String ANSI_RESET = "\u001B[0m";
     public static void main(String[] args) throws IOException {
@@ -15,7 +14,7 @@ public class zad47 {
         String s = reader.readLine();
         System.out.print(ANSI_YELLOW + toStarShorthand(s) + ANSI_RESET);
     }
-    public static String toStarShorthand(@NotNull String s){
+    public static String toStarShorthand(String s){
         int count = 1;
         String result = "";
         int i = 1;
