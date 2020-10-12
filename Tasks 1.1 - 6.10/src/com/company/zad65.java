@@ -98,29 +98,22 @@ public class zad65 {
         } else {
             while (count != 3) {
                 for (int i = 1; i <= kolvo(counts, max); i++) {
-                    System.out.println("Длина слова: " + max);
-                    System.out.println("Количество слов длины " + max + " " + kolvo(counts, max));
                     if (i == 1) {
-                        System.out.println("Первое вхождения слова длины " + max + " равно " + getFirst(splits, max));
                         result.append(getFirst(splits, max) + " ");
                         count += 1;
                         if (count == 3) {
                             break;
                         }
                     }else if (i == 2) {
-                            System.out.println("Второе вхождения слова длины " + max + " равно " + getSecond(splits, max));
                             result.append(getSecond(splits, max) + " ");
                             count += 1;
                             if (count == 3)
                                 break;
-                            System.out.println("Я добавил " + count + " слово");
                         } else {
-                            System.out.println("Третье вхождения слова длины " + max + " равно " + getThird(splits, max));
                             result.append(getThird(splits, max) + " ");
                             count += 1;
                             if (count == 3)
                                 break;
-                            System.out.println("Я добавил " + count + " слово");
                         }
                     }
                     max--;
